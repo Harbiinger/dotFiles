@@ -1,5 +1,5 @@
 ## Get colors -----------------
-FG="#33ce55"
+FG="#60AEED"
 BG="#000000"
  
 BLACK="#15131A"
@@ -59,4 +59,4 @@ i3lock \
 	--indicator                    \
 	--time-str="%I:%M %p"        \
 	--date-str="%b %d, %G"        \
-	## --blur 5          
+	--blur 10          
