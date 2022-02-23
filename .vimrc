@@ -3,7 +3,6 @@ runtime! archlinux.vim
 set nu
 syntax on
 set tabstop=4
-set paste
 nnoremap <C-y> "+y
 vnoremap <C-y> "+y
 nnoremap <C-p> "+gP
