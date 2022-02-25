@@ -1,12 +1,13 @@
 ## Get colors -----------------
-FG="#60AEED"
+#FG="#60AEED"
+FG="#15131A"
 BG="#000000"
  
 BLACK="#15131A"
 RED="#fa747b"
 GREEN="#72a0a6"
 YELLOW="#f6bbb8"
-BLUE="#7f99a6"
+BLUE="#60AEED"
 MAGENTA="#dc554f"
 CYAN="#8cb6cc"
 WHITE="#d3d7db"
@@ -18,7 +19,7 @@ i3lock \
 	--color="${BG}99"  \
 	\
 	--insidever-color=#071511    \
-	--insidewrong-color=${RED}    \
+	--insidewrong-color=${BLACK}    \
 	--inside-color="${BG}00"    \
 	\
 	--ringver-color=#071511    \
@@ -31,9 +32,9 @@ i3lock \
 	--keyhl-color=#33CE55        \
 	--bshl-color=${RED}            \
 	\
-	--verif-color=${FG}            \
-	--wrong-color=${FG}            \
-	--layout-color=${FG}        \
+	--verif-color=${BLUE}            \
+	--wrong-color=${RED}            \
+	--layout-color=${BLUE}        \
 	\
 	--time-color=${FG}            \
 	--date-color=${FG}            \
@@ -59,4 +60,4 @@ i3lock \
 	--indicator                    \
 	--time-str="%I:%M %p"        \
 	--date-str="%b %d, %G"        \
-	--blur 10          
+	--blur 0          
