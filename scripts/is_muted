@@ -1,0 +1,11 @@
+#!/bin/bash
+#pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+output=$(pacmd list-sources | grep -e index -e name: -e muted -e device.description | grep -e sofhdadsp_6 -A 1 | grep -e yes)
+yes="s"
+if [ "${output: -1}" = "$yes"  ];
+then
+	echo "    "
+else
+	echo "    "
+fi

@@ -12,31 +12,39 @@ then
 fi
 export PATH
 export PATH=$PATH:/home/theo/bin
-export PATH="$HOME/platform-tools:$PATH"
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
-export VISUAL=vim;
-export EDITOR=vim;
 
 # User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+	for rc in ~/.bashrc.d/*; do
+		if [ -f "$rc" ]; then
+			. "$rc"
+		fi
+	done
+fi
+
+unset rc
+
+# aliases
 alias theo='banner theo'
-alias ls='exa'
-alias project='cd /home/theo/Documents/UMons/BAC2/projet'
+alias ls='exa --icons'
+alias project='cd /home/theo/Documents/UMons/BAC2/reseau/project/'
 alias rmclass='rm *.class'
 alias ytbdl='python3 ~/Programmes-Python/youtubeDownloader/main.py'
 alias hack.start='~/hollywood/bin/hollywood'
-alias tpsql='ssh bd1_05@mi-tpsql.umons.ac.be'
 alias vim='gvim -v'
 alias javaVersion='sudo alternatives --config java'
 alias wifi='nmcli radio wifi'
 alias rmx='rm *.x'
+alias work='cd /home/theo/Documents/Workspace/'
+
+# editor
+export VISUAL=vim;
+export EDITOR=vim;
 
 # bash tuning
 #PS1='[\u@\h \W]\$'
 PS1='\e[1;34m[\u]\e[0;32m<@\h \W>\$ \e[0m'
-
-# gradle install
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/theo/.sdkman"
-[[ -s "/home/theo/.sdkman/bin/sdkman-init.sh" ]] && source "/home/theo/.sdkman/bin/sdkman-init.sh"
+. "$HOME/.cargo/env"

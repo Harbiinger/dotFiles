@@ -1,0 +1,5 @@
+#!/bin/bash
+[[ -z "$1" ]] && echo "Donne un fichier" && exit 1
+file=./$:
+javac $file
+java $file
