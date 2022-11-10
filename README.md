@@ -13,5 +13,6 @@ There are dependencies that must be installed from sources :
 
 # install config
 ```
+chmod +x install.sh
 ./install.sh
 ```
