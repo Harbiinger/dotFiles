@@ -5,7 +5,7 @@
 # install dependencies
 ```
 git clone git@github.com:Harbiinger/dotFiles.git && cd dotFiles
-sudo dnf install dependencies.txt
+install packages listed in dependencies.txt
 ```
 There are dependencies that must be installed from sources :
  - https://github.com/ibhagwan/picom
