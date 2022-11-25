@@ -30,7 +30,7 @@ unset rc
 # aliases
 alias theo='banner theo'
 alias ls='exa --icons'
-alias project='cd /home/theo/Documents/UMons/BAC2/reseau/project/'
+alias project='cd /home/theo/Documents/UMons/BAC3/sdd2/project/'
 alias rmclass='rm *.class'
 alias ytbdl='python3 ~/Programmes-Python/youtubeDownloader/main.py'
 alias hack.start='~/hollywood/bin/hollywood'
@@ -39,6 +39,7 @@ alias javaVersion='sudo alternatives --config java'
 alias wifi='nmcli radio wifi'
 alias rmx='rm *.x'
 alias work='cd /home/theo/Documents/Workspace/'
+alias umons='cd /home/theo/Documents/UMons/'
 
 # editor
 export VISUAL=vim;

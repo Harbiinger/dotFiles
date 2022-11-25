@@ -12,3 +12,4 @@ pavucontrol
 banner
 alacritty
 blueman
+feh

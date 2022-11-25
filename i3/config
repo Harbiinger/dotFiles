@@ -213,7 +213,7 @@ exec_always --no-startup-id ~/.config/polybar/shapes/launch.sh &
 
 # wallpaper
 # forest
-exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/fedora-black-4k.png
+exec --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/road.jpg
 
 # gaps
 default_border pixel 0
