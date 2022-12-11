@@ -1,0 +1,24 @@
+#!/bin/sh
+swaylock \
+    --hide-keyboard-layout \
+    --indicator-radius 100 \
+    --indicator-thickness 0 \
+    --ring-color 00000000 \
+    --ring-ver-color 00000000 \
+    --ring-wrong-color 00000000 \
+    --ring-clear-color 00000000 \
+    --key-hl-color 00000000 \
+    --bs-hl-color 00000000 \
+    --text-color 00000000 \
+    --text-caps-lock-color 00000000 \
+    --line-color 00000000 \
+    --line-ver-color 00000000 \
+    --line-wrong-color 00000000 \
+    --line-clear-color 00000000 \
+    --separator-color 00000000 \
+    --inside-color 00000000 \
+    --inside-ver-color 00000000\
+    --inside-wrong-color 00000000 \
+    --inside-clear-color 00000000\
+    --color 00000000 \
+    --clock \

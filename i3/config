@@ -189,7 +189,7 @@ client.focused_inactive #000000 #000000 #000000 #000000
 #}
 
 # windows settings
-for_window [title="camera"] floating enable
+for_window [class="Alacritty" instance="alacritty"] floating enable
 
 # my key bindings
 bindsym $mod+Shift+s exec --no-startup-id arandr

@@ -49,3 +49,10 @@ export EDITOR=vim;
 #PS1='[\u@\h \W]\$'
 PS1='\e[1;34m[\u]\e[0;32m<@\h \W>\$ \e[0m'
 . "$HOME/.cargo/env"
+
+# managed by bashquote
+QUOTEFILE=corporate.txt
+SYMBOL=$(head -n 1 $HOME/.config/bashquote/$QUOTEFILE)
+QUOTE=$(tail -n+2 $HOME/.config/bashquote/$QUOTEFILE | shuf -n 1)
+COLUMNS=$(tput cols)
+printf "\n%*s\n\n" $(((${#QUOTE}+$COLUMNS)/2)) "$SYMBOL $QUOTE $SYMBOL"
