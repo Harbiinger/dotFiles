@@ -2,7 +2,7 @@
 ![image](https://raw.githubusercontent.com/Harbiinger/dotFiles/Hyprland/fullrice.png)
 
 # config 
- - Hyprland 
+ - Hyprland (window manager)
  - Waybar (status bar)
  - dunst (notifications manager)
  - NeoVim (text editor)
