@@ -1,5 +1,0 @@
-#!/bin/bash
-
-for source in $(pacmd list-sources | grep name: | grep input | sed -e 's/name://' | sed -e 's/<//' | sed -e 's/>//'); do
-	pactl set-source-mute $source toggle
-done

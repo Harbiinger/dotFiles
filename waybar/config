@@ -1,0 +1,102 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 0,
+    "modules-left": ["wlr/workspaces", "tray"],
+    "modules-center": ["clock"],
+    "modules-right": [
+        "pulseaudio",
+        "cpu",
+        "temperature",
+        "memory",
+        "network",
+        "battery"
+    ],
+
+    "hyprland/window": {
+        "format": "{}"
+    },
+    "tray": {
+        "icon-size": 13,
+        "spacing": 10
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["", "", ""],
+        "on-scroll-up": "brightnessctl set 1%+",
+        "on-scroll-down": "brightnessctl set 1%-",
+        "min-length": 6
+    },
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 30,
+            "critical": 20
+        },
+        "format": " {icon} {capacity}%",
+        "format-charging": "  {capacity}%",
+        "format-plugged": "  {capacity}%",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", "", "", ""]
+    },
+    "wlr/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate",
+        // "format": "{icon}",
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": [],
+            "10": []
+        }
+    },
+    "clock": {
+        "format": "{: %R   %d/%m}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "network": {
+        "format-wifi": " 直 {essid}",
+        "format-ethernet": "  {ipaddr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": " 睊 Disconnected",
+        "tooltip-format-wifi": "Signal Strenght: {signalStrength}% | Down Speed: {bandwidthDownBits}, Up Speed: {bandwidthUpBits}",
+        "on-click": "wofi-wifi-menu"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": " 🔇  Muted",
+        "scroll-step": 1,
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", "墳", ""]
+        }
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "   {}%"
+    },
+    "memory": {
+        "interval": 10,
+	"format": "   {}% "
+    },
+    "temperature": {
+        "thermal-zone": 1,
+	//"hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+	"critical-threshold": 80,
+	"format-critical": "🌡 {temperatureC}°C ",
+	"format": " 🌡 {temperatureC}°C "
+    }
+}
